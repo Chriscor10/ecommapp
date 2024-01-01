@@ -118,4 +118,25 @@ body {
     z-index: 1;
     cursor: pointer;
   }
+
+  .buyButton:hover{
+    background-color: white;
+    color: black;
+  }
   
+  .sliderItem:nth-child(1) .sliderBg{
+    background-color: #369e62;
+  }
+
+  .sliderItem:nth-child(2) .sliderBg{
+    background-color: rebeccapurple;
+  }
+  .sliderItem:nth-child(3) .sliderBg{
+    background-color: teal;
+  }
+  .sliderItem:nth-child(4) .sliderBg{
+    background-color: cornflowerblue;
+  }
+  .sliderItem:nth-child(5) .sliderBg{
+    background-color: rgb(124, 115, 80);
+  }
