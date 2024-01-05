@@ -99,5 +99,12 @@ menuItems.forEach((item, index) => {
     currentProductTitle.textContent = choosenproduct.title;
     currentProductPrice.textContent = "$" + choosenproduct.price;
     currentProductImg.src = choosenproduct.colors[0].img
+
+
+    //assing new colors
+
+    currentProductColors.forEach((color, index) => {
+        color.style.backgroundColor = choosenproduct.colors[index].code;
+    }); 
   });
 });
