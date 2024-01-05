@@ -98,13 +98,18 @@ menuItems.forEach((item, index) => {
     //change texts of currentProduct
     currentProductTitle.textContent = choosenproduct.title;
     currentProductPrice.textContent = "$" + choosenproduct.price;
-    currentProductImg.src = choosenproduct.colors[0].img
-
+    currentProductImg.src = choosenproduct.colors[0].img;
 
     //assing new colors
 
     currentProductColors.forEach((color, index) => {
-        color.style.backgroundColor = choosenproduct.colors[index].code;
-    }); 
+      color.style.backgroundColor = choosenproduct.colors[index].code;
+    });
+  });
+});
+
+currentProductColors.forEach((color, index) => {
+  color.addEventListener("click", () => {
+    currentProductImg.src = choosenproduct.colors[index].img;
   });
 });
